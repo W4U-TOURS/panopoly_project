@@ -90,7 +90,7 @@ install:
   - 'if [ $VERSION = "HEAD" ]; then
       cd ..;
       rm -rf docroot/modules/contrib && rm -rf docroot/profiles/contrib/panopoly && rm -rf vendor && rm composer.lock;
-      composer require W4U-TOURS/panopoly:dev-8.x-2.x --no-update;
+      composer require panopoly/panopoly:dev-8.x-2.x --no-update;
       composer update;
       cd docroot;
       drush updatedb -y;
